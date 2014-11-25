@@ -18,8 +18,8 @@ public class ConnectionFactory {
     public Connection getConnection() throws SQLException{
         try {
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-            return DriverManager.getConnection("jdbc:mysql://150.164.102.160/daw-aluno6","daw-aluno6","daw06");
-            //return DriverManager.getConnection("jdbc:mysql://localhost/escola","root","");
+            //return DriverManager.getConnection("jdbc:mysql://150.164.102.160/daw-aluno6","daw-aluno6","daw06");
+            return DriverManager.getConnection("jdbc:mysql://localhost/escola","root","");
             } catch (SQLException ex) {
         throw new RuntimeException(ex);
         }

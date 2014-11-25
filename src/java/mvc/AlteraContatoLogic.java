@@ -24,7 +24,6 @@ public class AlteraContatoLogic implements Logica {
         String hora = request.getParameter("hora");
         String local = request.getParameter("local");
         String estado = request.getParameter("estado");
-        String imagem = request.getParameter("imagem");
     
 
         Contato contato = new Contato();
@@ -36,7 +35,6 @@ public class AlteraContatoLogic implements Logica {
         contato.setHora(hora);
         contato.setLocal(local);
         contato.setEstado(estado);
-        contato.setEstado(imagem);
         ContatoDao dao = new ContatoDao();
         dao.altera(id, contato);
         System.out.println("Adicionando contatum... ");
